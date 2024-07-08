@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portofolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/0817f5a431.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="image/logo.png" class="logo">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Me</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portofolio</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+            <h1>I'M <span>Fadly Febry</span></h1>
+            <p>This is my portofolio to showcase all my work.</p>
+            <a href="https://drive.google.com/file/d/19qe_rXP2vrqd_6znvkfogm-czSxChNTl/view?usp=sharing" target="_blank">Download CV</a>
+        </div>
+        <div class="image">
+            <img src="image/shape.png" class="shape">
+            <img src="image/orang.png" class="orang">
+        </div>
+    </div>
+</div>
+
+
+<!-- ---------about------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="image/gambar1.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I am a student in the field of information technology, my expertise is a web designer, and animation. I will work with the best</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Web Designer</span><br>Designing Website Interfaces</li>
+                        <li><span>Animation</span><br>Make Animated Videos</li>
+                    </ul>
+                </div>     
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2023</span><br>Attended University with a major in information technology</li>
+                        <li><span>2020</span><br>attended university with a major in cyber security</li>
+                    </ul>
+                </div>  
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-----------sevices----------------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>In web design services, I, as a professional web designer, will help clients create websites that suit their business needs and goals. Web designers will work with clients to understand the products or services offered, the desired target market, and the business message that the website wants to convey.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-sharp fa-solid fa-video"></i>
+                <h2>Animation</h2>
+                <p>Animation creation services provide high-quality animation solutions for various needs. I will develop animation concepts, design characters, create scenarios, arrange sound and music, and do editing and rendering to produce interesting and entertaining animations.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!---------portofolio------->
+<div id="portofolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1> 
+        <div class="work-list">
+            <div class="work">
+                <img src="image/work-1.png">
+                <div class="layer">
+                    <h3>Animation</h3>
+                    <p>Animation is a technique of creating moving images by combining several different images in sequence. I use animate software for making animations</p>
+                    <a href="https://youtu.be/lZu5-vnulsY" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="image/work-2.png">
+            </div>
+            <div class="work">
+                <img src="image/work-2.png">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!----------contact----------->
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+</body>
+</html>
